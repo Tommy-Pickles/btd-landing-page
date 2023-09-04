@@ -30,7 +30,8 @@ body, h1, h2, p {
     position: relative;
     overflow: hidden;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    max-width: 100%;
+    max-width: 80%; /* Adjust this value to control the max width of the video container */
+    margin: 0 auto; /* Center the video container */
   }
   
   .video-container iframe {
@@ -49,10 +50,12 @@ body, h1, h2, p {
 /* Style the image */
 .text-below-video img {
     display: block;
-    max-width: 100%;
+    max-width: 80%; /* Adjust this value to control the max width of the image */
     height: auto;
     margin-top: 20px; /* Adjust this value for spacing */
-}
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto;
+  }
 
 /* Mobile responsiveness for the image */
 @media only screen and (max-width: 600px) {
