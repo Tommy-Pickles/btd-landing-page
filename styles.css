@@ -46,13 +46,22 @@ body, h1, h2, p {
     margin-top: 50px; /* Adjust this value to control the spacing */
   }
 
-  /* Style the image */
+/* Style the image */
 .text-below-video img {
     display: block;
     max-width: 100%;
     height: auto;
     margin-top: 20px; /* Adjust this value for spacing */
-  }
+}
+
+/* Mobile responsiveness for the image */
+@media only screen and (max-width: 600px) {
+    .text-below-video img {
+        max-width: 100%; /* Make the image width 100% on mobile */
+        margin-top: 10px; /* Adjust spacing for mobile */
+    }
+}
+
   
   /* Add spacing below the image */
   .text-below-image {
