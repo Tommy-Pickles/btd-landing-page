@@ -2,60 +2,103 @@
 body, h1, h2, p {
     margin: 0;
     padding: 0;
-  }
-  
+}
+
 /* Apply Comic Sans font to elements with class 'comic-sans' */
 .comic-sans {
     font-family: "Comic Sans MS", sans-serif;
-  }
-  
-  /* Apply Arial font to elements with class 'arial' */
-  .arial {
+}
+
+/* Apply Arial font to elements with class 'arial' */
+.arial {
     font-family: Arial, sans-serif;
-  }
-  
-  /* Set background color */
-  body {
+}
+
+/* Set background color */
+body {
     background-color: #fbcc14;
-  }
-  
-  /* Center the content */
-  header, section {
+}
+
+/* Center the content */
+header, section {
     text-align: center;
     padding: 20px;
-  }
-  
+}
+
 /* Style the video container */
 .video-container {
     position: relative;
     overflow: hidden;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    max-width: 80%; /* Adjust this value to control the max width of the video container */
-    margin: 0 auto; /* Center the video container */
-  }
-  
-  .video-container iframe {
+    padding-bottom: 40%; /* Adjust this value to control the height of the video container */
+    max-width: 50%; /* Adjust this value to control the max width of the video container */
+    margin: 20px auto 0; /* Add space above the video (top margin) */
+}
+
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
 
-  /* Add spacing below the video */
+/* Add spacing below the video */
 .text-below-video {
     margin-top: 50px; /* Adjust this value to control the spacing */
-  }
+    max-width: 60%; /* Adjust this value to match the max width of video and image */
+    margin-left: auto; /* Center the text horizontally */
+    margin-right: auto;
+}
 
 /* Style the image */
 .text-below-video img {
     display: block;
-    max-width: 80%; /* Adjust this value to control the max width of the image */
+    max-width: 100%; /* Adjust this value to control the max width of the image */
     height: auto;
     margin-top: 20px; /* Adjust this value for spacing */
     margin-left: auto; /* Center the image horizontally */
     margin-right: auto;
-  }
+}
+
+/* Apply playful colors to each letter in the title */
+.comic-sans-title {
+    display: inline-block;
+    letter-spacing: -6px; /* Adjust this value to your preference */
+    animation: colorChange 2s infinite;
+}
+
+.comic-sans-title span {
+    display: inline-block;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: orange;
+    }
+}
+
+/* Media query for desktop adjustments */
+@media only screen and (min-width: 601px) {
+    /* Style the video container for desktop */
+    .video-container {
+        padding-bottom: 40%; /* Adjust this value for the height */
+        max-width: 60%; /* Adjust this value for the width */
+    }
+
+    /* Style the image for desktop */
+    .text-below-video img {
+        max-width: 100%; /* Adjust this value for the max width of the image on desktop */
+    }
+}
 
 /* Mobile responsiveness for the image */
 @media only screen and (max-width: 600px) {
@@ -64,34 +107,3 @@ body, h1, h2, p {
         margin-top: 10px; /* Adjust spacing for mobile */
     }
 }
-
-  
-  /* Add spacing below the image */
-  .text-below-image {
-    margin-top: 20px; /* Adjust this value to control the spacing */
-  }
-/* Apply playful colors to each letter in the title */
-.comic-sans-title {
-    display: inline-block;
-    letter-spacing: -6px; /* Adjust this value to your preference */
-  }
-  
-  .comic-sans-title span {
-    display: inline-block;
-    animation: colorChange 2s infinite;
-  }
-  
-  @keyframes colorChange {
-    0%, 100% {
-      color: red;
-    }
-    25% {
-      color: blue;
-    }
-    50% {
-      color: green;
-    }
-    75% {
-      color: orange;
-    }
-  }
