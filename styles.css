@@ -40,6 +40,24 @@ body, h1, h2, p {
     width: 100%;
     height: 100%;
   }
+
+  /* Add spacing below the video */
+.text-below-video {
+    margin-top: 50px; /* Adjust this value to control the spacing */
+  }
+
+  /* Style the image */
+.text-below-video img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Adjust this value for spacing */
+  }
+  
+  /* Add spacing below the image */
+  .text-below-image {
+    margin-top: 20px; /* Adjust this value to control the spacing */
+  }
 /* Apply playful colors to each letter in the title */
 .comic-sans-title {
     display: inline-block;
