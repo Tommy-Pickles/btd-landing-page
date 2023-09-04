@@ -1,0 +1,57 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply Comic Sans font to elements with class 'comic-sans' */
+  .comic-sans {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  /* Apply Arial font to elements with class 'arial' */
+  .arial {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Set background color */
+  body {
+    background-color: #fbcc14;
+  }
+  
+  /* Center the content */
+  header, section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the video container */
+  iframe {
+    max-width: 100%;
+  }
+  
+/* Apply playful colors to each letter in the title */
+.comic-sans-title {
+    display: inline-block;
+    letter-spacing: -5px; /* Adjust this value to your preference */
+  }
+  
+  .comic-sans-title span {
+    display: inline-block;
+    animation: colorChange 2s infinite;
+  }
+  
+  @keyframes colorChange {
+    0%, 100% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: orange;
+    }
+  }
