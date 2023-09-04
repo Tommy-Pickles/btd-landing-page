@@ -4,8 +4,8 @@ body, h1, h2, p {
     padding: 0;
   }
   
-  /* Apply Comic Sans font to elements with class 'comic-sans' */
-  .comic-sans {
+/* Apply Comic Sans font to elements with class 'comic-sans' */
+.comic-sans {
     font-family: "Comic Sans MS", cursive, sans-serif;
   }
   
@@ -25,15 +25,24 @@ body, h1, h2, p {
     padding: 20px;
   }
   
-  /* Style the video container */
-  iframe {
-    max-width: 100%;
+/* Style the video container */
+iframe {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  /* Mobile responsiveness */
+  @media only screen and (max-width: 400px) {
+    iframe {
+      max-width: 100%;
+    }
   }
   
 /* Apply playful colors to each letter in the title */
 .comic-sans-title {
     display: inline-block;
-    letter-spacing: -5px; /* Adjust this value to your preference */
+    letter-spacing: -6px; /* Adjust this value to your preference */
   }
   
   .comic-sans-title span {
